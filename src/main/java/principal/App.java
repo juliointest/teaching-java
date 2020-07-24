@@ -4,8 +4,8 @@ import dto.Viagem;
 
 public class App {
     public static void main(String[] args) {
-        Viagem primeiraViagem = new Viagem();
+        Viagem primeiraViagem = new Viagem("Maringá");
 
-        primeiraViagem.destino = "Maringá";
+        System.out.println(primeiraViagem.destino);
     }
 }
