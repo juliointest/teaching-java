@@ -2,8 +2,20 @@ package dto;
 
 import enums.Destinos;
 
+import java.util.List;
+
 public class Viagem {
     private Destinos destino;
+
+    public List<Acompanhante> getAcompanhantes() {
+        return acompanhantes;
+    }
+
+    public void setAcompanhantes(List<Acompanhante> acompanhantes) {
+        this.acompanhantes = acompanhantes;
+    }
+
+    private List<Acompanhante> acompanhantes;
 
     public Viagem(Destinos destino) {
         this.destino = destino;
@@ -15,5 +27,13 @@ public class Viagem {
 
     public Destinos getDestino() {
         return this.destino;
+    }
+
+    @Override
+    public String toString() {
+        return "Viagem{" +
+                "destino=" + destino +
+                ", acompanhantes=" + acompanhantes +
+                '}';
     }
 }
