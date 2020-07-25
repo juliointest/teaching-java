@@ -9,7 +9,7 @@ public class Propriedades {
     public static String getPropriedade(String chave) {
         String propriedade = null;
 
-        try (InputStream input = new FileInputStream("./src/main/resources/config.properties")) {
+        try (InputStream input = new FileInputStream("./src/main/resources/application.properties")) {
 
             Properties property = new Properties();
             property.load(input);

@@ -1,12 +1,13 @@
 package dto;
 
 import enums.Destinos;
+import interfaces.CalculadoraDePrevisao;
 import utils.Propriedades;
 
 import java.util.List;
 
-public class ViagemNacional extends Viagem implements interfaces.Viagem {
-    public ViagemNacional(Destinos destinos) {
+public class CalculadoraDePrevisaoNacional extends Viagem implements CalculadoraDePrevisao {
+    public CalculadoraDePrevisaoNacional(Destinos destinos) {
         super(destinos);
     }
 

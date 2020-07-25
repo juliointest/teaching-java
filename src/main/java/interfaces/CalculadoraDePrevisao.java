@@ -2,6 +2,6 @@ package interfaces;
 
 import enums.Destinos;
 
-public interface Viagem {
+public interface CalculadoraDePrevisao {
     int calculaPrevisaoChegada();
 }

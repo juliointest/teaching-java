@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Viagem {
     private Destinos destino;
+    private List<Acompanhante> acompanhantes;
 
     public List<Acompanhante> getAcompanhantes() {
         return acompanhantes;
@@ -14,8 +15,6 @@ public class Viagem {
     public void setAcompanhantes(List<Acompanhante> acompanhantes) {
         this.acompanhantes = acompanhantes;
     }
-
-    private List<Acompanhante> acompanhantes;
 
     public Viagem(Destinos destino) {
         this.destino = destino;

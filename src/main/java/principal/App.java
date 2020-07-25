@@ -2,8 +2,8 @@ package principal;
 
 import dto.Acompanhante;
 import dto.Viagem;
-import dto.ViagemInternacional;
-import dto.ViagemNacional;
+import dto.CalculadoraDePrevisaoInternacional;
+import dto.CalculadoraDePrevisaoNacional;
 import enums.Destinos;
 
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ public class App {
             System.out.println(jaConfirmou + acompanhante.getNome());
         }
 
-        ViagemNacional segundaViagem = new ViagemNacional(Destinos.OSASCO);
+        CalculadoraDePrevisaoNacional segundaViagem = new CalculadoraDePrevisaoNacional(Destinos.OSASCO);
         segundaViagem.setExigeCPF(true);
         List<Acompanhante> acompanhantesSegundaViagem = new ArrayList<Acompanhante>();
         acompanhantesSegundaViagem.add(primeiroAcompanhante);
@@ -62,7 +62,7 @@ public class App {
             System.out.println(jaConfirmou + acompanhante.getNome());
         }
 
-        ViagemInternacional terceiraViagem = new ViagemInternacional(Destinos.MIAMI);
+        CalculadoraDePrevisaoInternacional terceiraViagem = new CalculadoraDePrevisaoInternacional(Destinos.MIAMI);
         terceiraViagem.setExigeVisto(true);
         List<Acompanhante> acompanhantesTerceiraViagem = new ArrayList<Acompanhante>();
         acompanhantesTerceiraViagem.add(primeiroAcompanhante);
