@@ -48,6 +48,7 @@ public class App {
         acompanhantesSegundaViagem.add(primeiroAcompanhante);
         acompanhantesSegundaViagem.add(primeiroAcompanhante);
         acompanhantesSegundaViagem.add(primeiroAcompanhante);
+        acompanhantesSegundaViagem.add(primeiroAcompanhante);
         segundaViagem.setAcompanhantes(acompanhantesSegundaViagem);
 
         System.out.println(segundaViagem.getDestino().getValor());
@@ -65,6 +66,7 @@ public class App {
         ViagemInternacional terceiraViagem = new ViagemInternacional(Destinos.MIAMI);
         terceiraViagem.setExigeVisto(true);
         List<Acompanhante> acompanhantesTerceiraViagem = new ArrayList<Acompanhante>();
+        acompanhantesTerceiraViagem.add(primeiroAcompanhante);
         acompanhantesTerceiraViagem.add(primeiroAcompanhante);
         terceiraViagem.setAcompanhantes(acompanhantesTerceiraViagem);
 
