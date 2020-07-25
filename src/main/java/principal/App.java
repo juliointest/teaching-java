@@ -31,7 +31,7 @@ public class App {
 
         System.out.println(primeiraViagem.getDestino().getValor());
 
-        for (Acompanhante acompanhante : acompanhantes) {
+        for (Acompanhante acompanhante : primeiraViagem.getAcompanhantes()) {
             String jaConfirmou = "( ) ";
 
             if (acompanhante.isConfirmado()) {
@@ -45,12 +45,39 @@ public class App {
         segundaViagem.setExigeCPF(true);
         List<Acompanhante> acompanhantesSegundaViagem = new ArrayList<Acompanhante>();
         acompanhantesSegundaViagem.add(primeiroAcompanhante);
+        acompanhantesSegundaViagem.add(primeiroAcompanhante);
+        acompanhantesSegundaViagem.add(primeiroAcompanhante);
+        acompanhantesSegundaViagem.add(primeiroAcompanhante);
+        segundaViagem.setAcompanhantes(acompanhantesSegundaViagem);
+
+        System.out.println(segundaViagem.getDestino().getValor());
+
+        for (Acompanhante acompanhante : acompanhantesSegundaViagem) {
+            String jaConfirmou = "( ) ";
+
+            if (acompanhante.isConfirmado()) {
+                jaConfirmou = "(X) ";
+            }
+
+            System.out.println(jaConfirmou + acompanhante.getNome());
+        }
 
         ViagemInternacional terceiraViagem = new ViagemInternacional(Destinos.MIAMI);
         terceiraViagem.setExigeVisto(true);
         List<Acompanhante> acompanhantesTerceiraViagem = new ArrayList<Acompanhante>();
-        acompanhantesTerceiraViagem.add(segundoAcompanhante);
+        acompanhantesTerceiraViagem.add(primeiroAcompanhante);
+        terceiraViagem.setAcompanhantes(acompanhantesTerceiraViagem);
 
+        System.out.println(terceiraViagem.getDestino().getValor());
 
+        for (Acompanhante acompanhante : acompanhantesTerceiraViagem) {
+            String jaConfirmou = "( ) ";
+
+            if (acompanhante.isConfirmado()) {
+                jaConfirmou = "(X) ";
+            }
+
+            System.out.println(jaConfirmou + acompanhante.getNome());
+        }
     }
 }
