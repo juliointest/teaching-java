@@ -5,7 +5,8 @@ public enum Destinos {
     OSASCO("Osasco"),
     GOIAS("Goiás"),
     RECIFE("Recife"),
-    MANAUS("Manaus");
+    MANAUS("Manaus"),
+    MIAMI("Miami");
 
     private String valor;
 

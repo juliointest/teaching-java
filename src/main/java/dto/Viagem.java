@@ -28,12 +28,4 @@ public class Viagem {
     public Destinos getDestino() {
         return this.destino;
     }
-
-    @Override
-    public String toString() {
-        return "Viagem{" +
-                "destino=" + destino +
-                ", acompanhantes=" + acompanhantes +
-                '}';
-    }
 }
