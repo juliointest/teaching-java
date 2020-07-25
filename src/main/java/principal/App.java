@@ -6,6 +6,8 @@ public class App {
     public static void main(String[] args) {
         Viagem primeiraViagem = new Viagem("Maringá");
 
-        System.out.println(primeiraViagem.destino);
+        primeiraViagem.setDestino("Osasco");
+
+        System.out.println(primeiraViagem.getDestino());
     }
 }
